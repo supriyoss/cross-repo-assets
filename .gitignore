@@ -1,0 +1,10 @@
+#Terraform lock file and licenses
+.terraform/
+.terraform.lock.hcl
+
+# Terraform variable files
+terraform.tfvars
+*.tfvars
+
+# Allow example files
+!*.tfvars.example

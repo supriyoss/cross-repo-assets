@@ -1,0 +1,10 @@
+# ==========================================
+# Azure Subscription Configuration
+# ==========================================
+subscription_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+
+# ==========================================
+# Project Configuration
+# ==========================================
+project_name    = "fpnsa"
+location        = "eastus"
