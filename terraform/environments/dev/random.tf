@@ -3,4 +3,8 @@ resource "random_string" "storage_suffix" {
   upper   = false
   special = false
   numeric = true
+
+  keepers = {
+    project = var.project_name
+  }
 }
