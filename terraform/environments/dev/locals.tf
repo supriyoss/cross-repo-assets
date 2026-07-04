@@ -8,6 +8,6 @@ locals {
 
   naming = {
     resource_group  = "rg-${var.project_name}"
-    storage_account = "st${var.project_name}001"
+    storage_account = "st${var.project_name}${random_string.storage_suffix.result}"
   }
 }

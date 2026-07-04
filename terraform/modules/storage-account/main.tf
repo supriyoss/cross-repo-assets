@@ -9,6 +9,15 @@ resource "azurerm_storage_account" "this" {
   min_tls_version                 = "TLS1_2"
   allow_nested_items_to_be_public = false
   tags                            = var.tags
+  blob_properties {
+  versioning_enabled = true
+  delete_retention_policy {
+    days = 30
+  }
+  container_delete_retention_policy {
+    days = 30
+  }
+}
 }
 
 resource "azurerm_storage_container" "uploads" {
